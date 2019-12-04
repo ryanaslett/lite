@@ -2,12 +2,13 @@ package splitter
 
 import (
 	"fmt"
+	git "github.com/libgit2/git2go"
 	"os"
 	"path/filepath"
 	"regexp"
 	"strings"
 
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v27"
 )
 
 var messageNormalizer = regexp.MustCompile(`\s*\r?\n`)
